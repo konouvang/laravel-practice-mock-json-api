@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Practice extends Model
 {
+    public $timestamps = false;
+
     protected $table = 'practice';
     protected $primaryKey = "PracticeId";
     protected $fillable = [
         'PracticeName',
-        'InstitutionId',
-        'IsDeleted',
     ];
 }

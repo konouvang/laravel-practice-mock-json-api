@@ -25,4 +25,7 @@ JsonApi::register('default')->routes(function ($api) {
     $api->resource('clinics')->relationships(function ($relations) {
         $relations->hasOne('institution');
     });
+    $api->resource('practices')->relationships(function ($relations) {
+        $relations->hasOne('institution');
+    });
 });
